@@ -1,0 +1,102 @@
+
+/* Container for the entire section */
+.-gemini-mission-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Tab buttons container */
+.-gemini-tabs-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+  width: fit-content;
+}
+
+/* Individual tab button styling */
+.-gemini-tab {
+  background-color: transparent;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 4px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Active (selected) tab state */
+.-gemini-tab.active {
+  background-color: #e0e0e0;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Main content wrapper */
+.-gemini-content-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Content blocks (default hidden) */
+.-gemini-content {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+/* Active content block (visible) */
+.-gemini-content.active {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .-gemini-content.active {
+    flex-direction: row;
+  }
+}
+
+/* Text + image columns */
+.-gemini-text-content,
+.-gemini-image-content {
+  flex: 1;
+}
+
+/* Headings in this section – keep same style as about section title style */
+.-gemini-text-content h2 {
+  font-size: 48px;
+  color: #0d2847;
+  margin-bottom: 20px;
+}
+
+/* UPDATED: paragraph style to match "about us" paragraph */
+.-gemini-text-content p {
+  font: 400 15px/1.7 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #6a7a89;
+  margin: 0;
+}
+
+/* Image block */
+.-gemini-image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.-gemini-image-content img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 8px;
+}
