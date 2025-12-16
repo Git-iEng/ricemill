@@ -161,4 +161,4 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # SESSION_COOKIE_SECURE = True
  
 
- 
+CSRF_TRUSTED_ORIGINS = ["https://ricemill.ieng.tech"]
