@@ -37,6 +37,13 @@ from django.utils import timezone
 from django.views.decorators.http import require_POST
 from django.urls import reverse
 
+from django.http import HttpResponse
+from django.contrib.staticfiles.storage import staticfiles_storage
+ 
+def sitemap(request):
+    with staticfiles_storage.open("sitemap.xml") as f:
+        return HttpResponse(f.read(), content_type="application/xml")
+
 
 # ---------- Validation patterns ----------
 NAME_RE  = re.compile(r"^[A-Za-z\s'.-]{2,}$")
@@ -49,26 +56,26 @@ def _static_abs_path(relpath: str) -> str | None:
     """Return absolute path of a static file using Django's staticfiles finders, or None."""
     return finders.find(relpath)
 
-def _append_to_excel(row):
-    """Create/append to the Request Demo workbook."""
-    os.makedirs(EXCEL_DIR, exist_ok=True)
-    if os.path.exists(EXCEL_PATH):
-        wb = load_workbook(EXCEL_PATH)
-        ws = wb.active
-    else:
-        wb = Workbook()
-        ws = wb.active
-        ws.title = "Requests"
-        headers = [
-            "Timestamp", "Full Name", "Company", "Email",
-            "Country", "Dial Code", "Phone", "Address",
-            "Message", "Source IP",
-        ]
-        ws.append(headers)
-        for i in range(1, len(headers) + 1):
-            ws.column_dimensions[get_column_letter(i)].width = 24
-    ws.append(row)
-    wb.save(EXCEL_PATH)
+# def _append_to_excel(row):
+#     """Create/append to the Request Demo workbook."""
+#     os.makedirs(EXCEL_DIR, exist_ok=True)
+#     if os.path.exists(EXCEL_PATH):
+#         wb = load_workbook(EXCEL_PATH)
+#         ws = wb.active
+#     else:
+#         wb = Workbook()
+#         ws = wb.active
+#         ws.title = "Requests"
+#         headers = [
+#             "Timestamp", "Full Name", "Company", "Email",
+#             "Country", "Dial Code", "Phone", "Address",
+#             "Message", "Source IP",
+#         ]
+#         ws.append(headers)
+#         for i in range(1, len(headers) + 1):
+#             ws.column_dimensions[get_column_letter(i)].width = 24
+#     ws.append(row)
+#     wb.save(EXCEL_PATH)
 
 
 # ---------- Email helpers ----------
@@ -151,11 +158,11 @@ def request_demo_view(request):
     country_code, dial = (country.split("|", 1) + [""])[:2]
 
     # Excel append
-    _append_to_excel([
-        timezone.now().strftime("%Y-%m-%d %H:%M:%S %Z") or timezone.now().strftime("%Y-%m-%d %H:%M:%S"),
-        full_name, company, email, country_code, dial, phone, address, message,
-        request.META.get("REMOTE_ADDR", ""),
-    ])
+    # _append_to_excel([
+    #     timezone.now().strftime("%Y-%m-%d %H:%M:%S %Z") or timezone.now().strftime("%Y-%m-%d %H:%M:%S"),
+    #     full_name, company, email, country_code, dial, phone, address, message,
+    #     request.META.get("REMOTE_ADDR", ""),
+    # ])
 
     # Build email
     ts = timezone.now().strftime("%Y-%m-%d %H:%M:%S %Z")
@@ -226,23 +233,23 @@ def contact_section(request):
         )
 
         # Append to Excel
-        xlsx_path = Path(
-            getattr(settings, "CONTACT_SUBMISSIONS_XLSX", Path(settings.BASE_DIR) / "contact_submissions.xlsx")
-        )
-        append_submission_xlsx(
-            xlsx_path,
-            [
-                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                cd["first_name"],
-                cd.get("last_name", ""),
-                cd.get("company", ""),
-                cd["email"],
-                resolved_alpha2,
-                resolved_country_name,
-                e164_phone or cd.get("phone", ""),
-                cd.get("message", ""),
-            ],
-        )
+        # xlsx_path = Path(
+        #     getattr(settings, "CONTACT_SUBMISSIONS_XLSX", Path(settings.BASE_DIR) / "contact_submissions.xlsx")
+        # )
+        # append_submission_xlsx(
+        #     xlsx_path,
+        #     [
+        #         datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        #         cd["first_name"],
+        #         cd.get("last_name", ""),
+        #         cd.get("company", ""),
+        #         cd["email"],
+        #         resolved_alpha2,
+        #         resolved_country_name,
+        #         e164_phone or cd.get("phone", ""),
+        #         cd.get("message", ""),
+        #     ],
+        # )
 
         # Email body
         subject = "New website contact submission for CARL Software"
@@ -353,22 +360,22 @@ def contact_block_submit(request):
     xlsx_path = Path(getattr(settings, "CONTACT_SUBMISSIONS_XLSX",
                              Path(settings.BASE_DIR) / "contact_submissions.xlsx"))
     # Be liberal with columns; utils will just append the row.
-    append_submission_xlsx(
-        xlsx_path,
-        [
-            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            name,
-            email,
-            e164_phone or phone,
-            alpha2,
-            country_name,
-            dial_code,
-            service,
-            message,
-            request.META.get("REMOTE_ADDR", ""),
-            request.META.get("HTTP_REFERER", ""),
-        ],
-    )
+    # append_submission_xlsx(
+    #     xlsx_path,
+    #     [
+    #         datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    #         name,
+    #         email,
+    #         e164_phone or phone,
+    #         alpha2,
+    #         country_name,
+    #         dial_code,
+    #         service,
+    #         message,
+    #         request.META.get("REMOTE_ADDR", ""),
+    #         request.META.get("HTTP_REFERER", ""),
+    #     ],
+    # )
 
     # --- Email notification ---
     subject = f"[Website] Consulting request: {name} – {service or 'General'}"
