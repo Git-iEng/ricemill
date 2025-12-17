@@ -176,3 +176,21 @@ document.addEventListener('DOMContentLoaded', () => {
     defaultContent.classList.add('active');
   }
 });
+
+
+// Reveal-on-scroll for the Why Choose Us section
+(() => {
+  const targets = document.querySelectorAll(
+    '.reveal-left-le-electrical-why-us, .reveal-right-le-electrical-why-us, .reveal-top-le-electrical-why-us, .reveal-bottom-le-electrical-why-us'
+  );
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-in-le-electrical-why-us');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+ 
+  targets.forEach(t => io.observe(t));
+})();

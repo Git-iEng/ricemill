@@ -212,3 +212,255 @@
     width: 100%;
   }
 }
+
+
+
+/* ====== FULL-BLEED LAYOUT & NO GAP ====== */
+.section-why-le-electrical-why-us {
+  background: #fff;
+  padding: clamp(36px, 1vw, 84px) 0;
+}
+ 
+.container-le-electrical-why-us {
+  width: 100%;
+  max-width: none;
+  /* full width */
+  margin: 0;
+  /* no side gap */
+  padding: 0;
+  /* no side padding */
+}
+ 
+/* Two-column split: no gutter */
+.grid-le-electrical-why-us {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* equal halves */
+  gap: 0;
+  /* remove gap between left & right */
+  align-items: stretch;
+  /* max-width: 1400px;    */
+  /* equal heights */
+}
+ 
+/* LEFT dark panel: no outer radius */
+.left-le-electrical-why-us {
+  background: #0e141c;
+  color: #eef3fb;
+  border-radius: 0;
+  /* no outer rounding */
+  padding: clamp(16px, 3.2vw, 28px);
+  margin: 0;
+  /* tight to edges */
+}
+ 
+ 
+/* RIGHT image: flush, no radius */
+.media-le-electrical-why-us {
+  margin: 0;
+}
+ 
+.img-le-electrical-why-us {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  /* no outer rounding */
+  box-shadow: none;
+  /* remove soft edge for full-bleed feel */
+}
+ 
+/* ====== CONTENT (unchanged visuals) ====== */
+.eyebrow-le-electrical-why-us {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #f66d28;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+ 
+.title-le-electrical-why-us {
+  margin: 4px 0 12px;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+ 
+.cards-le-electrical-why-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+ 
+.card-le-electrical-why-us {
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 12px;
+  padding: 16px;
+  background: transparent;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+ 
+.card-le-electrical-why-us:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+  border-color: rgba(255, 255, 255, .28);
+}
+ 
+.card-title-le-electrical-why-us {
+  margin: 0 0 6px;
+  font-weight: 800;
+}
+ 
+.card-text-le-electrical-why-us {
+  margin: 0;
+  color: #9fb0c6;
+  line-height: 1.65;
+}
+ 
+.footnote-le-electrical-why-us {
+  margin: 12px 0 0;
+  color: #9fb0c6;
+}
+ 
+.footnote-le-electrical-why-us a {
+  color: #f66d28;
+  font-weight: 800;
+  text-decoration: none;
+}
+ 
+.footnote-le-electrical-why-us a:hover {
+  text-decoration: underline;
+}
+ 
+/* ====== MIDDLE CIRCLE: ARROW ONLY ====== */
+/* keep link element as-is; we’ll hide its inner text visually and render an arrow */
+.floating-cta-le-electrical-why-us {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 999px;
+  background: #f66d28;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(232, 91, 42, .35);
+  animation: spin-le-electrical-why-us 7.5s linear infinite;
+}
+ 
+.floating-cta-le-electrical-why-us:hover {
+  filter: brightness(1.05);
+  transform: translate(-50%, -50%) scale(1.03);
+}
+ 
+/* Hide any inner text (e.g., 'Contact Us') accessibly */
+.floating-cta-le-electrical-why-us>* {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+ 
+/* Render arrow */
+.floating-cta-le-electrical-why-us::after {
+  content: "➜";
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1;
+}
+ 
+/* keep gentle spin */
+@keyframes spin-le-electrical-why-us {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+ 
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+ 
+/* ====== REVEALS (unchanged) ====== */
+.reveal-left-le-electrical-why-us,
+.reveal-right-le-electrical-why-us,
+.reveal-top-le-electrical-why-us,
+.reveal-bottom-le-electrical-why-us {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .8s cubic-bezier(.2, .65, .2, 1),
+    transform .8s cubic-bezier(.2, .65, .2, 1);
+}
+ 
+.reveal-left-le-electrical-why-us {
+  transform: translateX(-28px);
+}
+ 
+.reveal-right-le-electrical-why-us {
+  transform: translateX(28px);
+}
+ 
+.reveal-top-le-electrical-why-us {
+  transform: translateY(-28px);
+}
+ 
+.reveal-bottom-le-electrical-why-us {
+  transform: translateY(28px);
+}
+ 
+.reveal-in-le-electrical-why-us {
+  opacity: 1 !important;
+  transform: none !important;
+}
+ 
+/* ====== RESPONSIVE ====== */
+@media (max-width:1024px) {
+  .grid-le-electrical-why-us {
+    grid-template-columns: 1fr;
+  }
+ 
+  .floating-cta-le-electrical-why-us {
+    position: static;
+    margin: 12px auto 0;
+    transform: none;
+    animation: none;
+    width: 64px;
+    height: 64px;
+  }
+ 
+  .img-le-electrical-why-us {
+    height: 320px;
+  }
+}
+ 
+@media (max-width:640px) {
+  .cards-le-electrical-why-us {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce) {
+ 
+  .reveal-left-le-electrical-why-us,
+  .reveal-right-le-electrical-why-us,
+  .reveal-top-le-electrical-why-us,
+  .reveal-bottom-le-electrical-why-us {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+ 
+  .floating-cta-le-electrical-why-us {
+    animation: none !important;
+  }
+}
