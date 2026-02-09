@@ -1,32 +1,32 @@
 :root {
-    --nav-height-steel-mill: 60px;
-    --maxw-steel-mill: 1400px;
-    --accent-steel-mill: #ff5a00;
-    --text-steel-mill: #fff;
-    --muted-steel-mill: #d9d9d9;
+    --nav-height-rice-mill-new: 60px;
+    --maxw-rice-mill-new: 1400px;
+    --accent-rice-mill-new: #ff5a00;
+    --text-rice-mill-new: #fff;
+    --muted-rice-mill-new: #d9d9d9;
 }
 
 
-.hero-steel-mill * {
+.hero-rice-mill-new * {
     box-sizing: border-box;
     font-family: "Poppins", system-ui, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.hero-steel-mill.steel-mill {
+.hero-rice-mill-new.rice-mill-new {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-top: var(--nav-height-steel-mill);
+    margin-top: var(--nav-height-rice-mill-new);
     overflow: hidden;
 }
 
-.slider-container-steel-mill {
+.slider-container-rice-mill-new {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.slide-steel-mill {
+.slide-rice-mill-new {
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -35,56 +35,56 @@
     transition: opacity .9s ease-in-out;
 }
 
-.active-steel-mill {
+.active-rice-mill-new {
     opacity: 1;
     z-index: 1;
 }
 
-.overlay-steel-mill {
+.overlay-rice-mill-new {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .55);
 }
 
-.inner-steel-mill {
+.inner-rice-mill-new {
     position: relative;
     height: 100%;
-    max-width: var(--maxw-steel-mill);
+    max-width: var(--maxw-rice-mill-new);
     margin: 0 auto;
     padding-inline: 24px;
 }
 
-.content-steel-mill {
+.content-rice-mill-new {
     position: absolute;
     top: 16%;
     left: 24px;
     width: min(920px, 70vw);
-    color: var(--text-steel-mill);
+    color: var(--text-rice-mill-new);
     text-align: left;
 }
 
-.eyebrow-steel-mill {
-    color: var(--muted-steel-mill);
+.eyebrow-rice-mill-new {
+    color: var(--muted-rice-mill-new);
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.title-steel-mill {
+.title-rice-mill-new {
     font-weight: 800;
     line-height: 1.06;
     font-size: clamp(36px, 5.2vw, 72px);
     margin: 0 0 16px;
 }
 
-.desc-steel-mill {
+.desc-rice-mill-new {
     color: #d0d0d0;
     font-size: clamp(14px, 1.3vw, 18px);
     margin: 0 0 22px;
 }
 
-.btn-steel-mill {
+.btn-rice-mill-new {
     display: inline-block;
-    background: var(--accent-steel-mill);
+    background: var(--accent-rice-mill-new);
     color: #fff;
     text-decoration: none;
     padding: 14px 22px;
@@ -94,7 +94,7 @@
     transition: transform .15s ease, filter .2s ease;
 }
 
-.btn-steel-mill:hover {
+.btn-rice-mill-new:hover {
     filter: brightness(1.06);
     transform: translateY(-2px);
 }
@@ -107,7 +107,7 @@
 }
 
 /* --- Square card fully on the right edge of the slide --- */
-.card-steel-mill {
+.card-rice-mill-new {
     position: absolute;
     /* anchor to the *viewport* right edge, not the 1400px grid */
     right: clamp(16px, 3.5vw, 60px);
@@ -128,29 +128,29 @@
 
 }
 
-.card-kicker-steel-mill {
-    color: var(--accent-steel-mill);
+.card-kicker-rice-mill-new {
+    color: var(--accent-rice-mill-new);
     font-weight: 700;
     font-size: 14px;
 }
 
-.card-title-steel-mill {
+.card-title-rice-mill-new {
     font-size: 18px;
     line-height: 1.35;
     margin: 0;
 }
 
-.card-link-steel-mill {
+.card-link-rice-mill-new {
     margin-top: auto;
-    color: var(--accent-steel-mill);
+    color: var(--accent-rice-mill-new);
     font-weight: 700;
     text-decoration: none;
 }
 
 /* --- Single arrows, always inside the 1400px area --- */
-.arrows-steel-mill {
+.arrows-rice-mill-new {
     position: absolute;
-    left: calc((100vw - var(--maxw-steel-mill))/2 + 150px);
+    left: calc((100vw - var(--maxw-rice-mill-new))/2 + 150px);
     /* inside 1400px grid */
     bottom: 36px;
     display: flex;
@@ -158,8 +158,8 @@
     z-index: 5;
 }
 
-.prev-steel-mill,
-.next-steel-mill {
+.prev-rice-mill-new,
+.next-rice-mill-new {
     width: 44px;
     height: 44px;
     border: 0;
@@ -175,46 +175,46 @@
     transition: background .2s ease, color .2s ease, transform .15s ease;
 }
 
-.prev-steel-mill:hover,
-.next-steel-mill:hover {
-    background: var(--accent-steel-mill);
+.prev-rice-mill-new:hover,
+.next-rice-mill-new:hover {
+    background: var(--accent-rice-mill-new);
     color: #fff;
     transform: translateY(-2px);
 }
 
 /* Scroll reveal */
-.reveal-up-steel-mill,
-.reveal-down-steel-mill,
-.reveal-left-steel-mill,
-.reveal-right-steel-mill {
+.reveal-up-rice-mill-new,
+.reveal-down-rice-mill-new,
+.reveal-left-rice-mill-new,
+.reveal-right-rice-mill-new {
     opacity: 0;
     transition: opacity .9s ease, transform .9s ease;
 }
 
-.reveal-up-steel-mill {
+.reveal-up-rice-mill-new {
     transform: translateY(60px);
 }
 
-.reveal-down-steel-mill {
+.reveal-down-rice-mill-new {
     transform: translateY(-60px);
 }
 
-.reveal-left-steel-mill {
+.reveal-left-rice-mill-new {
     transform: translateX(-60px);
 }
 
-.reveal-right-steel-mill {
+.reveal-right-rice-mill-new {
     transform: translateX(60px);
 }
 
-.revealed-steel-mill {
+.revealed-rice-mill-new {
     opacity: 1;
     transform: translate(0, 0);
 }
 
 /* Responsive fallback: keep card visible on small screens */
 @media (max-width:900px) {
-    .card-steel-mill {
+    .card-rice-mill-new {
         right: 24px;
         bottom: 28px;
         width: 260px;
@@ -514,13 +514,13 @@
 }
 
 /* ====== Section ====== */
-.core-wrap-core-steel-mill {
+.core-wrap-core-rice-mill-new {
     background: var(--core-bg);
     color: var(--core-ink);
     padding: clamp(20px, 4vw, 36px) 0;
 }
 
-.core-grid-core-steel-mill {
+.core-grid-core-rice-mill-new {
     width: min(1480px, 92%);
     margin-inline: auto;
     display: grid;
@@ -530,7 +530,7 @@
 }
 
 /* ====== Media with badge ====== */
-.core-media-core-steel-mill {
+.core-media-core-rice-mill-new {
     position: relative;
     /* border-radius: 16px; */
     overflow: hidden;
@@ -538,13 +538,13 @@
     margin: 0;
 }
 
-.core-media-core-steel-mill img {
+.core-media-core-rice-mill-new img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.core-badge-core-steel-mill{
+.core-badge-core-rice-mill-new{
   position:absolute;
   right:10px;
   bottom:10px;
@@ -570,13 +570,13 @@
   /* border-radius:14px; */
 }
 
-.core-years-core-steel-mill{
+.core-years-core-rice-mill-new{
   font-size:clamp(2.2rem,5.8vw,3.2rem);
   font-weight:900;
   line-height:.9;
 }
 
-.core-note-core-steel-mill{
+.core-note-core-rice-mill-new{
   margin-top:6px;               /* small gap under the number */
   font-weight:800;
   letter-spacing:.2px;
@@ -586,47 +586,47 @@
 
 /* Small devices—scale badge a bit */
 @media (max-width: 520px){
-  .core-badge-core-steel-mill{
+  .core-badge-core-rice-mill-new{
     width:110px;
     min-height:160px;
     padding:12px 14px;
   }
-  .core-lead-core-steel-mill2 {
+  .core-lead-core-rice-mill-new2 {
     padding-top: 0px;
     padding-right: 20px;
     padding-left: 20px;
   }
-  .core-years-core-steel-mill{
+  .core-years-core-rice-mill-new{
     font-size:clamp(1.8rem,8vw,2.4rem);
   }
 }
 
 
 /* ====== Copy ====== */
-.core-copy-core-steel-mill {
+.core-copy-core-rice-mill-new {
     padding-top: 6px;
 }
 
-.core-kicker-core-steel-mill {
+.core-kicker-core-rice-mill-new {
     margin: 0 0 8px;
     font-weight: 900;
     letter-spacing: .35px;
     color: #ff946b;
 }
 
-.core-title-core-steel-mill {
+.core-title-core-rice-mill-new {
     margin: .1rem 0 .7rem;
     font-size: clamp(1.6rem, 3.4vw, 2.2rem);
     line-height: 1.15;
     font-weight: 900;
 }
 
-.core-lead-core-steel-mill {
+.core-lead-core-rice-mill-new {
     margin: 0 0 1rem;
     color: var(--core-muted);
     line-height: 1.65;
 }
-.core-lead-core-steel-mill2 {
+.core-lead-core-rice-mill-new2 {
     max-width: 1480px;
     margin: 20px auto;      
     padding: 20px;
@@ -643,7 +643,7 @@
 
 
 /* CTA */
-.core-cta-core-steel-mill {
+.core-cta-core-rice-mill-new {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
@@ -658,13 +658,13 @@
     transition: transform .25s ease, filter .25s ease, border-color .25s ease;
 }
 
-.core-cta-core-steel-mill:hover {
+.core-cta-core-rice-mill-new:hover {
     transform: translateY(-2px);
     filter: brightness(1.06);
 }
 
 /* Feature bar */
-.core-bar-core-steel-mill {
+.core-bar-core-rice-mill-new {
     margin-top: clamp(14px, 2.5vw, 20px);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -676,18 +676,18 @@
     border: 1px solid rgba(2, 8, 23, .06);
 }
 
-.core-item-core-steel-mill h3 {
+.core-item-core-rice-mill-new h3 {
     margin: .2rem 0 .35rem;
     font-weight: 900;
     font-size: clamp(1.02rem, 2.2vw, 1.15rem);
 }
 
-.core-item-core-steel-mill p {
+.core-item-core-rice-mill-new p {
     margin: 0;
     color: var(--core-muted);
 }
 
-.core-ico-core-steel-mill {
+.core-ico-core-rice-mill-new {
     width: 38px;
     height: 38px;
     border-radius: 10px;
@@ -699,7 +699,7 @@
     box-shadow: 0 10px 22px rgba(255, 106, 42, .28);
 }
 
-.core-divider-core-steel-mill {
+.core-divider-core-rice-mill-new {
     width: 1px;
     height: 100%;
     background: rgba(2, 8, 23, .1);
@@ -707,54 +707,54 @@
 
 /* ====== Responsive ====== */
 @media (max-width: 960px) {
-    .core-grid-core-steel-mill {
+    .core-grid-core-rice-mill-new {
         grid-template-columns: 1fr;
     }
 
-    .core-media-core-steel-mill {
+    .core-media-core-rice-mill-new {
         order: 1;
     }
 
-    .core-copy-core-steel-mill {
+    .core-copy-core-rice-mill-new {
         order: 2;
     }
 
-    .core-bar-core-steel-mill {
+    .core-bar-core-rice-mill-new {
         grid-template-columns: 1fr;
     }
 
-    .core-divider-core-steel-mill {
+    .core-divider-core-rice-mill-new {
         display: none;
     }
 }
 
 /* ====== Reveal on scroll (replays up/down) ====== */
-.reveal-left-core-steel-mill,
-.reveal-right-core-steel-mill,
-.reveal-up-core-steel-mill,
-.reveal-down-core-steel-mill {
+.reveal-left-core-rice-mill-new,
+.reveal-right-core-rice-mill-new,
+.reveal-up-core-rice-mill-new,
+.reveal-down-core-rice-mill-new {
     opacity: 0;
     transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
     will-change: transform, opacity;
 }
 
-.reveal-left-core-steel-mill {
+.reveal-left-core-rice-mill-new {
     transform: translateX(-18px);
 }
 
-.reveal-right-core-steel-mill {
+.reveal-right-core-rice-mill-new {
     transform: translateX(18px);
 }
 
-.reveal-up-core-steel-mill {
+.reveal-up-core-rice-mill-new {
     transform: translateY(18px);
 }
 
-.reveal-down-core-steel-mill {
+.reveal-down-core-rice-mill-new {
     transform: translateY(-18px);
 }
 
-.is-visible-core-steel-mill {
+.is-visible-core-rice-mill-new {
     opacity: 1;
     transform: none;
 }
@@ -770,17 +770,17 @@
   --proc-shadow:0 10px 30px rgba(2,8,23,.08);
 }
 
-.wrap-process-steel-mill{
+.wrap-process-rice-mill-new{
   background:var(--proc-bg);
   padding: clamp(36px, 6vw, 80px) 16px;
 }
 
-.head-process-steel-mill{
+.head-process-rice-mill-new{
   width:min(1120px, 100%);
   margin: 0 auto clamp(20px, 4vw, 36px);
 }
 
-.title-process-steel-mill{
+.title-process-rice-mill-new{
   font-size: clamp(2.2rem, 8vw, 5.2rem);
   line-height:.95;
   font-weight: 900;
@@ -789,7 +789,7 @@
   margin: 0;
 }
 
-.grid-process-steel-mill{
+.grid-process-rice-mill-new{
   width:min(1120px, 100%);
   margin-inline:auto;
   display:grid;
@@ -797,7 +797,7 @@
   gap: clamp(14px, 2.4vw, 22px);
 }
 
-.card-process-steel-mill{
+.card-process-rice-mill-new{
   position:relative;
   background:var(--proc-card);
   border:1px solid var(--proc-ring);
@@ -807,13 +807,13 @@
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
-.card-process-steel-mill:hover{
+.card-process-rice-mill-new:hover{
   transform: translateY(-4px);
   box-shadow: 0 18px 44px rgba(2,8,23,.12);
   border-color: rgba(249,115,22,.28);
 }
 
-.no-process-steel-mill{
+.no-process-rice-mill-new{
   display:block;
   font-weight:900;
   font-size: clamp(1.8rem, 4.8vw, 2.8rem);
@@ -821,21 +821,21 @@
   margin-bottom:.25rem;
 }
 
-.kicker-process-steel-mill{
+.kicker-process-rice-mill-new{
   color: var(--proc-accent);
   font-weight:800;
   font-size:.9rem;
   margin: 0 0 .45rem;
 }
 
-.h3-process-steel-mill{
+.h3-process-rice-mill-new{
   margin:.1rem 0 .4rem;
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   font-weight:900;
   color:var(--proc-ink);
 }
 
-.p-process-steel-mill{
+.p-process-rice-mill-new{
   margin:0;
   color:var(--proc-muted);
   line-height:1.6;
@@ -844,24 +844,24 @@
 
 /* ---- Responsive ---- */
 @media (max-width: 980px){
-  .grid-process-steel-mill{
+  .grid-process-rice-mill-new{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 620px){
-  .grid-process-steel-mill{
+  .grid-process-rice-mill-new{
     grid-template-columns: 1fr;
   }
 }
 
 /* ================== Reveal on scroll (bi-directional) ================== */
-.reveal-process-steel-mill{ opacity:0; transform: translateY(16px); }
-.reveal-process-steel-mill.from-up{ transform: translateY(22px); }
-.reveal-process-steel-mill.from-down{ transform: translateY(-22px); }
-.reveal-process-steel-mill.from-left{ transform: translateX(-28px); }
-.reveal-process-steel-mill.from-right{ transform: translateX(28px); }
+.reveal-process-rice-mill-new{ opacity:0; transform: translateY(16px); }
+.reveal-process-rice-mill-new.from-up{ transform: translateY(22px); }
+.reveal-process-rice-mill-new.from-down{ transform: translateY(-22px); }
+.reveal-process-rice-mill-new.from-left{ transform: translateX(-28px); }
+.reveal-process-rice-mill-new.from-right{ transform: translateX(28px); }
 
-.reveal-process-steel-mill.is-visible{
+.reveal-process-rice-mill-new.is-visible{
   opacity:1;
   transform:none;
   transition: transform .6s cubic-bezier(.22,1,.36,1), opacity .6s ease;
@@ -878,51 +878,51 @@
   --m-shadow:0 16px 48px rgba(2,8,23,.10);
 }
 
-.machines-wrap-type-steel-mill{
+.machines-wrap-type-rice-mill-new{
   background:var(--m-bg);
   padding: clamp(16px, 1vw, 20px) 16px;
 }
 
 /* --- Shared text --- */
-.machine-kicker-type-steel-mill{
+.machine-kicker-type-rice-mill-new{
   color:var(--m-accent);
   font-weight:800;
   letter-spacing:.2px;
   margin:0 0 .35rem;
 }
-.machine-title-type-steel-mill{
+.machine-title-type-rice-mill-new{
   margin:.1rem 0 .6rem;
   font-size: clamp(1.6rem, 4.5vw, 2.4rem);
   line-height:1.1;
   font-weight:900;
   color:var(--m-ink);
 }
-.machine-lead-type-steel-mill{
+.machine-lead-type-rice-mill-new{
   margin:0 0 .9rem;
   color:var(--m-muted);
   font-size: clamp(.98rem, 1.8vw, 1.05rem);
   line-height:1.7;
 }
-.machine-sub-type-steel-mill{
+.machine-sub-type-rice-mill-new{
   font-size:1rem;
   font-weight:900;
   margin:0 0 .35rem;
   color:var(--m-ink);
 }
-.machine-minihead-type-steel-mill{
+.machine-minihead-type-rice-mill-new{
   font-size:.9rem; font-weight:900; margin:0 0 .25rem; color:var(--m-ink);
 }
 
-.machine-list-type-steel-mill{
+.machine-list-type-rice-mill-new{
   list-style:none; padding:0; margin:0;
 }
-.machine-list-type-steel-mill li{
+.machine-list-type-rice-mill-new li{
   position:relative;
   padding-left:22px;
   margin:.28rem 0;
   color:var(--m-ink);
 }
-.machine-list-type-steel-mill li::before{
+.machine-list-type-rice-mill-new li::before{
   content:"";
   position:absolute; left:0; top:.52rem;
   width:10px; height:10px; border-radius:50%;
@@ -931,7 +931,7 @@
 }
 
 /* --- One machine row --- */
-.machine-type-steel-mill{
+.machine-type-rice-mill-new{
   width:min(1160px, 100%);
   margin: 0 auto clamp(28px, 6vw, 54px);
   display:grid;
@@ -939,43 +939,43 @@
   gap: clamp(16px, 3vw, 28px);
   align-items:center;
 }
-.machine-type-steel-mill.is-reverse{
+.machine-type-rice-mill-new.is-reverse{
   grid-template-columns: 1fr 1.05fr;
 }
-.machine-type-steel-mill.is-reverse .machine-media-type-steel-mill{ order:2; }
-.machine-type-steel-mill.is-reverse .machine-copy-type-steel-mill{ order:1; }
+.machine-type-rice-mill-new.is-reverse .machine-media-type-rice-mill-new{ order:2; }
+.machine-type-rice-mill-new.is-reverse .machine-copy-type-rice-mill-new{ order:1; }
 
 /* --- Media --- */
-.machine-media-type-steel-mill{
+.machine-media-type-rice-mill-new{
   position:relative; border-radius:16px; overflow:hidden;
   box-shadow: var(--m-shadow);
 }
-.machine-media-type-steel-mill img{
+.machine-media-type-rice-mill-new img{
   width:100%; height:100%; display:block; object-fit:cover;
   aspect-ratio: 10 / 9;
   transform: scale(1.01);
   transition: transform .6s cubic-bezier(.22,1,.36,1), filter .6s ease;
 }
-.machine-media-type-steel-mill::after{
+.machine-media-type-rice-mill-new::after{
   /* subtle gradient to help legibility when image is on left */
   content:""; position:absolute; inset:0;
   background: linear-gradient(90deg, rgba(0,0,0,.10), transparent 38%, transparent);
   pointer-events:none;
 }
-.machine-media-type-steel-mill:hover img{ transform: scale(1.04); filter: saturate(1.05); }
+.machine-media-type-rice-mill-new:hover img{ transform: scale(1.04); filter: saturate(1.05); }
 
 /* --- Copy --- */
-.machine-copy-type-steel-mill{ padding: clamp(4px, 1vw, 6px); }
-.machine-cols-type-steel-mill{
+.machine-copy-type-rice-mill-new{ padding: clamp(4px, 1vw, 6px); }
+.machine-cols-type-rice-mill-new{
   display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin:.6rem 0 .8rem;
 }
-.machine-bullets-type-steel-mill{ margin-top:.4rem; }
+.machine-bullets-type-rice-mill-new{ margin-top:.4rem; }
 
-.machine-specs-type-steel-mill{
+.machine-specs-type-rice-mill-new{
   display:grid; grid-template-columns: 1fr 1fr; gap:14px;
   margin-top:.6rem;
 }
-.spec-card-type-steel-mill{
+.spec-card-type-rice-mill-new{
   background:var(--m-card);
   border:1px solid var(--m-ring);
   border-radius:14px;
@@ -985,23 +985,23 @@
 
 /* --- Responsive --- */
 @media (max-width: 960px){
-  .machine-type-steel-mill,
-  .machine-type-steel-mill.is-reverse{
+  .machine-type-rice-mill-new,
+  .machine-type-rice-mill-new.is-reverse{
     grid-template-columns: 1fr;
   }
-  .machine-media-type-steel-mill::after{ background: linear-gradient(0deg, rgba(0,0,0,.10), transparent 40%); }
-  .machine-cols-type-steel-mill,
-  .machine-specs-type-steel-mill{ grid-template-columns: 1fr; }
+  .machine-media-type-rice-mill-new::after{ background: linear-gradient(0deg, rgba(0,0,0,.10), transparent 40%); }
+  .machine-cols-type-rice-mill-new,
+  .machine-specs-type-rice-mill-new{ grid-template-columns: 1fr; }
 }
 
 /* ===================== Reveal on Scroll ===================== */
-.reveal-type-steel-mill{ opacity:0; transform: translateY(16px); }
-.reveal-type-steel-mill.from-up{ transform: translateY(22px); }
-.reveal-type-steel-mill.from-down{ transform: translateY(-22px); }
-.reveal-type-steel-mill.from-left{ transform: translateX(-28px); }
-.reveal-type-steel-mill.from-right{ transform: translateX(28px); }
+.reveal-type-rice-mill-new{ opacity:0; transform: translateY(16px); }
+.reveal-type-rice-mill-new.from-up{ transform: translateY(22px); }
+.reveal-type-rice-mill-new.from-down{ transform: translateY(-22px); }
+.reveal-type-rice-mill-new.from-left{ transform: translateX(-28px); }
+.reveal-type-rice-mill-new.from-right{ transform: translateX(28px); }
 
-.reveal-type-steel-mill.is-visible{
+.reveal-type-rice-mill-new.is-visible{
   opacity:1; transform:none;
   transition: transform .7s cubic-bezier(.22,1,.36,1), opacity .7s ease;
 }

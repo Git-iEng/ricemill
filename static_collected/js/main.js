@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 (function () {
-  const grid = document.getElementById('grid-neplan-card-with-animation');
+  const grid = document.getElementById('grid-rice-mill-new-card-with-animation');
   if (!grid) return;
-  const cards = grid.querySelectorAll('.card-neplan-card-with-animation');
+  const cards = grid.querySelectorAll('.card-rice-mill-new-card-with-animation');
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add('show-neplan-card-with-animation');
+        e.target.classList.add('show-rice-mill-new-card-with-animation');
       } else {
         // remove so it replays when scrolling back (LIFO feel)
-        e.target.classList.remove('show-neplan-card-with-animation');
+        e.target.classList.remove('show-rice-mill-new-card-with-animation');
       }
     });
   }, { threshold: 0.18 });
@@ -176,3 +176,21 @@ document.addEventListener('DOMContentLoaded', () => {
     defaultContent.classList.add('active');
   }
 });
+
+
+// Reveal-on-scroll for the Why Choose Us section
+(() => {
+  const targets = document.querySelectorAll(
+    '.reveal-left-le-electrical-why-us, .reveal-right-le-electrical-why-us, .reveal-top-le-electrical-why-us, .reveal-bottom-le-electrical-why-us'
+  );
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-in-le-electrical-why-us');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+ 
+  targets.forEach(t => io.observe(t));
+})();

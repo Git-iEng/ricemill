@@ -1,4 +1,4 @@
-.cmms-contact-form-section {
+.rice-mill-newcontact-form-section {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.cmms-contact-form-overlay {
+.rice-mill-newcontact-form-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,14 +17,14 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.cmms-contact-form-container {
+.rice-mill-newcontact-form-container {
     position: relative;
     max-width: 700px;
     margin: auto;
     z-index: 2;
 }
 
-.cmms-contact-form-badge {
+.rice-mill-newcontact-form-badge {
     display: inline-block;
     padding: 6px 14px;
     border: 1px solid white;
@@ -33,7 +33,7 @@
     margin-bottom: 15px;
 }
 
-.cmms-contact-form-dot {
+.rice-mill-newcontact-form-dot {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -42,19 +42,19 @@
     margin-right: 6px;
 }
 
-.cmms-contact-form-title {
+.rice-mill-newcontact-form-title {
     font-size: 42px;
     margin-bottom: 40px;
 }
 
-.cmms-contact-form {
+.rice-mill-newcontact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.cmms-contact-form-input,
-.cmms-contact-form-textarea {
+.rice-mill-newcontact-form-input,
+.rice-mill-newcontact-form-textarea {
     padding: 12px 15px;
     border-radius: 6px;
     border: none;
@@ -63,12 +63,12 @@
     width: 100%;
 }
 
-.cmms-contact-form-textarea {
+.rice-mill-newcontact-form-textarea {
     height: 120px;
     resize: none;
 }
 
-.cmms-contact-form-btn {
+.rice-mill-newcontact-form-btn {
     background: limegreen;
     color: white;
     padding: 12px 20px;
@@ -79,108 +79,108 @@
     transition: background 0.3s ease;
 }
 
-.cmms-contact-form-btn:hover {
+.rice-mill-newcontact-form-btn:hover {
     background: green;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .cmms-contact-form-title {
+    .rice-mill-newcontact-form-title {
         font-size: 32px;
     }
 }
 /* Container */
-.cmms-contact-form-wrap{
+.rice-mill-newcontact-form-wrap{
   width:100%;
   background:#fff;
   padding:18px 20px 16px;
 }
-.cmms-contact-form-inner{
+.rice-mill-newcontact-form-inner{
   max-width:880px;
   margin:0 auto;
 }
 
 /* Badge (new) */
-.cmms-contact-form-badge2{
+.rice-mill-newcontact-form-badge2{
   display:inline-flex; align-items:center; gap:8px;
   border:1px solid rgba(0,0,0,.15);
   padding:8px 14px; border-radius:999px;
   text-decoration:none; color:#111; font-size:14px;
   background:#fff;
 }
-.cmms-contact-form-dot2{width:8px; height:8px; border-radius:50%; background:#9BEA2E; display:inline-block}
+.rice-mill-newcontact-form-dot2{width:8px; height:8px; border-radius:50%; background:#9BEA2E; display:inline-block}
 
 /* Heading */
-.cmms-contact-form-heading2{
+.rice-mill-newcontact-form-heading2{
   font-size: clamp(28px, 4vw, 44px);
   line-height:1.15; margin:20px 0 28px; color:#0b0b0b;
 }
 
 /* Success */
-.cmms-contact-form-success2{
+.rice-mill-newcontact-form-success2{
   background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0;
   padding:10px 14px; border-radius:10px; margin-bottom:18px;
 }
 
 /* Form layout */
-.cmms-contact-form-form2{ width:100%; }
-.cmms-contact-form-grid2{
+.rice-mill-newcontact-form-form2{ width:100%; }
+.rice-mill-newcontact-form-grid2{
   display:grid; grid-template-columns:1fr 1fr; gap:22px;
 }
-.cmms-contact-form-field2{ display:flex; flex-direction:column; gap:6px; }
+.rice-mill-newcontact-form-field2{ display:flex; flex-direction:column; gap:6px; }
 
-.cmms-contact-form-label2{
+.rice-mill-newcontact-form-label2{
     margin-top: 2px;
     padding-top: 4px;
   font-size:13px; color:#656565; letter-spacing:.1px;
 }
 
 /* Inputs */
-.cmms-contact-form-input2,
-.cmms-contact-form-textarea2{
+.rice-mill-newcontact-form-input2,
+.rice-mill-newcontact-form-textarea2{
   border:0; border-bottom:1px solid rgba(0,0,0,.18);
   padding:12px 0; outline:none; font-size:16px; color:#121212;
   background:transparent;
   transition:border-color .2s ease, box-shadow .2s ease;
 }
-.cmms-contact-form-input2:focus,
-.cmms-contact-form-textarea2:focus{
+.rice-mill-newcontact-form-input2:focus,
+.rice-mill-newcontact-form-textarea2:focus{
   border-bottom-color:#111;
   box-shadow:0 1px 0 0 #111;
 }
 
 /* Button */
-.cmms-contact-form-submit2{
+.rice-mill-newcontact-form-submit2{
   width:100%; margin-top:28px;
   background:#c7ff80; color:#0b0b0b;
   border:none; border-radius:999px;
   padding:14px 20px; font-weight:600; cursor:pointer;
   transition:filter .2s ease, transform .02s ease-in-out;
 }
-.cmms-contact-form-submit2:hover{ filter:brightness(.95); }
-.cmms-contact-form-submit2:active{ transform:translateY(1px); }
+.rice-mill-newcontact-form-submit2:hover{ filter:brightness(.95); }
+.rice-mill-newcontact-form-submit2:active{ transform:translateY(1px); }
 
 /* Responsive */
 @media (max-width: 768px){
-  .cmms-contact-form-grid2{ grid-template-columns:1fr; gap:18px; }
-  .cmms-contact-form-wrap{ padding:36px 16px 72px; }
+  .rice-mill-newcontact-form-grid2{ grid-template-columns:1fr; gap:18px; }
+  .rice-mill-newcontact-form-wrap{ padding:36px 16px 72px; }
 }
-.cmms-contact-form-submit2.cmms-contact-form-btnloading{
+.rice-mill-newcontact-form-submit2.rice-mill-newcontact-form-btnloading{
   position: relative;
   pointer-events: none;
   opacity: .85;
 }
-.cmms-contact-form-submit2.cmms-contact-form-btnloading::after{
+.rice-mill-newcontact-form-submit2.rice-mill-newcontact-form-btnloading::after{
   content:"";
   position:absolute;
   right:16px; top:50%; width:16px; height:16px; margin-top:-8px;
   border-radius:50%;
   border:2px solid rgba(0,0,0,.35);
   border-top-color: rgba(0,0,0,.9);
-  animation: cmms-contact-form-spin .8s linear infinite;
+  animation: rice-mill-newcontact-form-spin .8s linear infinite;
 }
-@keyframes cmms-contact-form-spin{ to{ transform: rotate(360deg);} }
-.cmms-contact-form-loc-grid {
+@keyframes rice-mill-newcontact-form-spin{ to{ transform: rotate(360deg);} }
+.rice-mill-newcontact-form-loc-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -189,7 +189,7 @@
   padding: 20px;
 }
 
-.cmms-contact-form-loc-card {
+.rice-mill-newcontact-form-loc-card {
   border-radius: 16px;
   padding: 32px; /* increased from 24px */
   display: flex;
@@ -197,7 +197,7 @@
   justify-content: flex-start; /* ensures top-aligned content */
   min-height: 280px; /* ensures uniform taller cards */
 }
-.cmms-contact-form-loc-card p{
+.rice-mill-newcontact-form-loc-card p{
     padding-top: 4px;
     color: #121212;
     font-size: 1em;
@@ -206,25 +206,25 @@
     padding-left:2px
 }
 /* Background colors for each card */
-.cmms-contact-form-loc-card:nth-child(1) {
+.rice-mill-newcontact-form-loc-card:nth-child(1) {
   background-color: #f9d9a9; /* peach */
 }
-.cmms-contact-form-loc-card:nth-child(2) {
+.rice-mill-newcontact-form-loc-card:nth-child(2) {
   background-color: #e6d4f9; /* lavender */
 }
-.cmms-contact-form-loc-card:nth-child(3) {
+.rice-mill-newcontact-form-loc-card:nth-child(3) {
   background-color: #d3dec2; /* light green */
 }
 
 /* Header with icon + title */
-.cmms-contact-form-loc-header {
+.rice-mill-newcontact-form-loc-header {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
 }
 
-.cmms-contact-form-loc-icon {
+.rice-mill-newcontact-form-loc-icon {
   background-color: #000;
   border-radius: 50%;
   width: 48px;
@@ -234,20 +234,20 @@
   justify-content: center;
 }
 
-.cmms-contact-form-loc-icon svg {
+.rice-mill-newcontact-form-loc-icon svg {
   width: 24px;
   height: 24px;
   fill: #fff;
 }
 
-.cmms-contact-form-loc-title {
+.rice-mill-newcontact-form-loc-title {
   font-size: 1.25rem;
   font-weight: bold;
   color: #000;
 }
 
 /* Content text */
-.cmms-contact-form-loc-info {
+.rice-mill-newcontact-form-loc-info {
   font-size: 1rem;
   color: #000;
   line-height: 1.6; /* better spacing between lines */
@@ -255,7 +255,7 @@
 }
 
 /* Learn more link */
-.cmms-contact-form-loc-learn {
+.rice-mill-newcontact-form-loc-learn {
   color: #000;
   text-decoration: underline;
   font-weight: 500;
@@ -264,16 +264,16 @@
 
 /* Responsive: stack on mobile */
 @media (max-width: 768px) {
-  .cmms-contact-form-loc-grid {
+  .rice-mill-newcontact-form-loc-grid {
     grid-template-columns: 1fr;
   }
 }
-.cmms-contact-form-loc-map{
+.rice-mill-newcontact-form-loc-map{
     padding: 2px;
     margin: 4px;
 }
-/* cmms-contact-form.css */
-.cmms-contact-form-error {
+/* rice-mill-newcontact-form.css */
+.rice-mill-newcontact-form-error {
     font-size: 14px;
     color: red;
     margin-top: 5px;

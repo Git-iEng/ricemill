@@ -9,34 +9,34 @@ body {
 }
 
 :root {
-    --nav-height-steel-mill: 60px;
-    --maxw-steel-mill: 1400px;
-    --accent-steel-mill: #ff5a00;
-    --text-steel-mill: #fff;
-    --muted-steel-mill: #d9d9d9;
+    --nav-height-rice-mill-new: 60px;
+    --maxw-rice-mill-new: 1400px;
+    --accent-rice-mill-new: #ff5a00;
+    --text-rice-mill-new: #fff;
+    --muted-rice-mill-new: #d9d9d9;
 }
 
 
-.hero-steel-mill * {
+.hero-rice-mill-new * {
     box-sizing: border-box;
     font-family: "Poppins", system-ui, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.hero-steel-mill.steel-mill {
+.hero-rice-mill-new.rice-mill-new {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-top: var(--nav-height-steel-mill);
+    margin-top: var(--nav-height-rice-mill-new);
     overflow: hidden;
 }
 
-.slider-container-steel-mill {
+.slider-container-rice-mill-new {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.slide-steel-mill {
+.slide-rice-mill-new {
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -45,56 +45,56 @@ body {
     transition: opacity .9s ease-in-out;
 }
 
-.active-steel-mill {
+.active-rice-mill-new {
     opacity: 1;
     z-index: 1;
 }
 
-.overlay-steel-mill {
+.overlay-rice-mill-new {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .55);
 }
 
-.inner-steel-mill {
+.inner-rice-mill-new {
     position: relative;
     height: 100%;
-    max-width: var(--maxw-steel-mill);
+    max-width: var(--maxw-rice-mill-new);
     margin: 0 auto;
     padding-inline: 24px;
 }
 
-.content-steel-mill {
+.content-rice-mill-new {
     position: absolute;
     top: 16%;
     left: 24px;
     width: min(920px, 70vw);
-    color: var(--text-steel-mill);
+    color: var(--text-rice-mill-new);
     text-align: left;
 }
 
-.eyebrow-steel-mill {
-    color: var(--muted-steel-mill);
+.eyebrow-rice-mill-new {
+    color: var(--muted-rice-mill-new);
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.title-steel-mill {
+.title-rice-mill-new {
     font-weight: 800;
     line-height: 1.06;
     font-size: clamp(36px, 5.2vw, 72px);
     margin: 0 0 16px;
 }
 
-.desc-steel-mill {
+.desc-rice-mill-new {
     color: #d0d0d0;
     font-size: clamp(14px, 1.3vw, 18px);
     margin: 0 0 22px;
 }
 
-.btn-steel-mill {
+.btn-rice-mill-new {
     display: inline-block;
-    background: var(--accent-steel-mill);
+    background: var(--accent-rice-mill-new);
     color: #fff;
     text-decoration: none;
     padding: 14px 22px;
@@ -104,7 +104,7 @@ body {
     transition: transform .15s ease, filter .2s ease;
 }
 
-.btn-steel-mill:hover {
+.btn-rice-mill-new:hover {
     filter: brightness(1.06);
     transform: translateY(-2px);
 }
@@ -117,7 +117,7 @@ body {
 }
 
 /* --- Square card fully on the right edge of the slide --- */
-.card-steel-mill {
+.card-rice-mill-new {
     position: absolute;
     /* anchor to the *viewport* right edge, not the 1400px grid */
     right: clamp(16px, 3.5vw, 60px);
@@ -138,29 +138,29 @@ body {
 
 }
 
-.card-kicker-steel-mill {
-    color: var(--accent-steel-mill);
+.card-kicker-rice-mill-new {
+    color: var(--accent-rice-mill-new);
     font-weight: 700;
     font-size: 14px;
 }
 
-.card-title-steel-mill {
+.card-title-rice-mill-new {
     font-size: 18px;
     line-height: 1.35;
     margin: 0;
 }
 
-.card-link-steel-mill {
+.card-link-rice-mill-new {
     margin-top: auto;
-    color: var(--accent-steel-mill);
+    color: var(--accent-rice-mill-new);
     font-weight: 700;
     text-decoration: none;
 }
 
 /* --- Single arrows, always inside the 1400px area --- */
-.arrows-steel-mill {
+.arrows-rice-mill-new {
     position: absolute;
-    left: calc((100vw - var(--maxw-steel-mill))/2 + 150px);
+    left: calc((100vw - var(--maxw-rice-mill-new))/2 + 150px);
     /* inside 1400px grid */
     bottom: 36px;
     display: flex;
@@ -168,8 +168,8 @@ body {
     z-index: 5;
 }
 
-.prev-steel-mill,
-.next-steel-mill {
+.prev-rice-mill-new,
+.next-rice-mill-new {
     width: 44px;
     height: 44px;
     border: 0;
@@ -185,46 +185,46 @@ body {
     transition: background .2s ease, color .2s ease, transform .15s ease;
 }
 
-.prev-steel-mill:hover,
-.next-steel-mill:hover {
-    background: var(--accent-steel-mill);
+.prev-rice-mill-new:hover,
+.next-rice-mill-new:hover {
+    background: var(--accent-rice-mill-new);
     color: #fff;
     transform: translateY(-2px);
 }
 
 /* Scroll reveal */
-.reveal-up-steel-mill,
-.reveal-down-steel-mill,
-.reveal-left-steel-mill,
-.reveal-right-steel-mill {
+.reveal-up-rice-mill-new,
+.reveal-down-rice-mill-new,
+.reveal-left-rice-mill-new,
+.reveal-right-rice-mill-new {
     opacity: 0;
     transition: opacity .9s ease, transform .9s ease;
 }
 
-.reveal-up-steel-mill {
+.reveal-up-rice-mill-new {
     transform: translateY(60px);
 }
 
-.reveal-down-steel-mill {
+.reveal-down-rice-mill-new {
     transform: translateY(-60px);
 }
 
-.reveal-left-steel-mill {
+.reveal-left-rice-mill-new {
     transform: translateX(-60px);
 }
 
-.reveal-right-steel-mill {
+.reveal-right-rice-mill-new {
     transform: translateX(60px);
 }
 
-.revealed-steel-mill {
+.revealed-rice-mill-new {
     opacity: 1;
     transform: translate(0, 0);
 }
 
 /* Responsive fallback: keep card visible on small screens */
 @media (max-width:900px) {
-    .card-steel-mill {
+    .card-rice-mill-new {
         right: 24px;
         bottom: 28px;
         width: 260px;
@@ -236,24 +236,24 @@ body {
 @media (max-width: 900px) {
 
   /* Hero fills the viewport under the fixed nav, no extra gap */
-  .hero-steel-mill.steel-mill {
-    height: calc(100vh - var(--nav-height-steel-mill));
-    margin-top: var(--nav-height-steel-mill);
+  .hero-rice-mill-new.rice-mill-new {
+    height: calc(100vh - var(--nav-height-rice-mill-new));
+    margin-top: var(--nav-height-rice-mill-new);
   }
 
-  .inner-steel-mill {
+  .inner-rice-mill-new {
     max-width: 100%;
     padding-inline: 12px;
   }
 
   /* Show more of the lower part of the image (less sky) */
-  .slide-steel-mill {
+  .slide-rice-mill-new {
     background-size: cover;
     background-position: center 80%; /* 80% pulls image up – more mill, less sky */
   }
 
   /* TEXT BLOCK – full width, higher on the image, no overflow */
-  .content-steel-mill {
+  .content-rice-mill-new {
     position: absolute;
     top: 9%;          /* was 12–18%: move text slightly up */
     left: 12px;
@@ -263,25 +263,25 @@ body {
     text-align: left;
   }
 
-  .eyebrow-steel-mill {
+  .eyebrow-rice-mill-new {
     font-size: 11px;
     margin-bottom: 4px;
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 22px;
     line-height: 1.18;
     margin-bottom: 8px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 13px;
     line-height: 1.45;
     margin-bottom: 8px;
   }
 
   /* CARD – stays fully visible, tight to the bottom */
-  .card-steel-mill {
+  .card-rice-mill-new {
     position: absolute;
     left: 12px;
     right: 12px;
@@ -295,21 +295,21 @@ body {
     gap: 6px;
   }
 
-  .card-title-steel-mill {
+  .card-title-rice-mill-new {
     font-size: 14px;
     line-height: 1.35;
   }
 
   /* ARROWS – just above the card, aligned to content edge */
-  .arrows-steel-mill {
+  .arrows-rice-mill-new {
     left: 12px;
     transform: none;
     bottom: 112px;    /* sits nicely above the white card */
     gap: 10px;
   }
 
-  .prev-steel-mill,
-  .next-steel-mill {
+  .prev-rice-mill-new,
+  .next-rice-mill-new {
     width: 36px;
     height: 36px;
     font-size: 22px;
@@ -318,15 +318,15 @@ body {
 
 /* Optional: even tighter on very small phones (≤ 480px) */
 @media (max-width: 480px) {
-  .content-steel-mill {
+  .content-rice-mill-new {
     top: 7%;
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 20px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 12px;
   }
 }
@@ -334,24 +334,24 @@ body {
 @media (max-width: 900px) {
 
   /* Slightly shorter than full screen to avoid stretched feeling */
-  .hero-steel-mill.steel-mill {
-    height: calc(90vh - var(--nav-height-steel-mill));
-    margin-top: var(--nav-height-steel-mill);
+  .hero-rice-mill-new.rice-mill-new {
+    height: calc(90vh - var(--nav-height-rice-mill-new));
+    margin-top: var(--nav-height-rice-mill-new);
   }
 
-  .inner-steel-mill {
+  .inner-rice-mill-new {
     max-width: 100%;
     padding-inline: 12px;
   }
 
   /* Show *less sky, more building* on mobile */
-  .slide-steel-mill {
+  .slide-rice-mill-new {
     background-size: cover;
     background-position: center bottom;  /* key change: crop sky, anchor to bottom */
   }
 
   /* TEXT BLOCK – sits a bit lower so it overlaps the mill more, not the sky */
-  .content-steel-mill {
+  .content-rice-mill-new {
     position: absolute;
     top: 14%;          /* was 9–12%: move text slightly down */
     left: 12px;
@@ -361,25 +361,25 @@ body {
     text-align: left;
   }
 
-  .eyebrow-steel-mill {
+  .eyebrow-rice-mill-new {
     font-size: 11px;
     margin-bottom: 4px;
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 22px;
     line-height: 1.18;
     margin-bottom: 8px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 13px;
     line-height: 1.45;
     margin-bottom: 8px;
   }
 
   /* CARD – stays fully visible at the bottom */
-  .card-steel-mill {
+  .card-rice-mill-new {
     position: absolute;
     left: 12px;
     right: 12px;
@@ -393,21 +393,21 @@ body {
     gap: 6px;
   }
 
-  .card-title-steel-mill {
+  .card-title-rice-mill-new {
     font-size: 14px;
     line-height: 1.35;
   }
 
   /* ARROWS – just above the card */
-  .arrows-steel-mill {
+  .arrows-rice-mill-new {
     left: 12px;
     transform: none;
     bottom: 112px;
     gap: 10px;
   }
 
-  .prev-steel-mill,
-  .next-steel-mill {
+  .prev-rice-mill-new,
+  .next-rice-mill-new {
     width: 36px;
     height: 36px;
     font-size: 22px;
@@ -417,23 +417,23 @@ body {
 /* Extra tightening for very small widths (like 412 × 915 and below) */
 @media (max-width: 480px) {
 
-  .hero-steel-mill.steel-mill {
-    height: calc(86vh - var(--nav-height-steel-mill));
+  .hero-rice-mill-new.rice-mill-new {
+    height: calc(86vh - var(--nav-height-rice-mill-new));
   }
 
-  .slide-steel-mill {
+  .slide-rice-mill-new {
     background-position: center 100%;   /* crop even more sky on very small phones */
   }
 
-  .content-steel-mill {
+  .content-rice-mill-new {
     top: 15%;        /* keep text clear but still over the mill */
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 20px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 12px;
   }
 }
@@ -441,23 +441,23 @@ body {
 /* ---------- MOBILE / TABLET PORTRAIT (≤ 900px) ---------- */
 @media (max-width: 900px) {
 
-  .hero-steel-mill.steel-mill {
-    height: calc(90vh - var(--nav-height-steel-mill));
-    margin-top: var(--nav-height-steel-mill);
+  .hero-rice-mill-new.rice-mill-new {
+    height: calc(90vh - var(--nav-height-rice-mill-new));
+    margin-top: var(--nav-height-rice-mill-new);
   }
 
-  .inner-steel-mill {
+  .inner-rice-mill-new {
     max-width: 100%;
     padding-inline: 12px;
   }
 
   /* Crop sky, anchor to bottom – removes “empty” top area */
-  .slide-steel-mill {
+  .slide-rice-mill-new {
     background-size: cover;
     background-position: center bottom;
   }
 
-  .content-steel-mill {
+  .content-rice-mill-new {
     position: absolute;
     top: 14%;
     left: 12px;
@@ -467,24 +467,24 @@ body {
     text-align: left;
   }
 
-  .eyebrow-steel-mill {
+  .eyebrow-rice-mill-new {
     font-size: 11px;
     margin-bottom: 4px;
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 22px;
     line-height: 1.18;
     margin-bottom: 8px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 13px;
     line-height: 1.45;
     margin-bottom: 8px;
   }
 
-  .card-steel-mill {
+  .card-rice-mill-new {
     position: absolute;
     left: 12px;
     right: 12px;
@@ -498,20 +498,20 @@ body {
     gap: 6px;
   }
 
-  .card-title-steel-mill {
+  .card-title-rice-mill-new {
     font-size: 14px;
     line-height: 1.35;
   }
 
-  .arrows-steel-mill {
+  .arrows-rice-mill-new {
     left: 12px;
     transform: none;
     bottom: 112px;
     gap: 10px;
   }
 
-  .prev-steel-mill,
-  .next-steel-mill {
+  .prev-rice-mill-new,
+  .next-rice-mill-new {
     width: 36px;
     height: 36px;
     font-size: 22px;
@@ -521,23 +521,23 @@ body {
 /* Extra tightening for very small phones (e.g. 412×915 and below) */
 @media (max-width: 480px) {
 
-  .hero-steel-mill.steel-mill {
-    height: calc(86vh - var(--nav-height-steel-mill));
+  .hero-rice-mill-new.rice-mill-new {
+    height: calc(86vh - var(--nav-height-rice-mill-new));
   }
 
-  .slide-steel-mill {
+  .slide-rice-mill-new {
     background-position: center 100%;   /* crop a bit more sky */
   }
 
-  .content-steel-mill {
+  .content-rice-mill-new {
     top: 15%;
   }
 
-  .title-steel-mill {
+  .title-rice-mill-new {
     font-size: 20px;
   }
 
-  .desc-steel-mill {
+  .desc-rice-mill-new {
     font-size: 12px;
   }
 }
@@ -555,13 +555,13 @@ body {
 }
 
 /* ====== Section ====== */
-.core-wrap-core-steel-mill {
+.core-wrap-core-rice-mill-new {
     background: var(--core-bg);
     color: var(--core-ink);
     padding: clamp(20px, 1vw, 26px) 0;
 }
 
-.core-grid-core-steel-mill {
+.core-grid-core-rice-mill-new {
     width: min(1200px, 92%);
     margin-inline: auto;
     display: grid;
@@ -571,7 +571,7 @@ body {
 }
 
 /* ====== Media with badge ====== */
-.core-media-core-steel-mill {
+.core-media-core-rice-mill-new {
     position: relative;
     /* border-radius: 16px; */
     overflow: hidden;
@@ -579,13 +579,13 @@ body {
     margin: 0;
 }
 
-.core-media-core-steel-mill img {
+.core-media-core-rice-mill-new img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.core-badge-core-steel-mill{
+.core-badge-core-rice-mill-new{
   position:absolute;
   right:10px;
   bottom:10px;
@@ -611,13 +611,13 @@ body {
   /* border-radius:14px; */
 }
 
-.core-years-core-steel-mill{
+.core-years-core-rice-mill-new{
   font-size:clamp(2.2rem,5.8vw,3.2rem);
   font-weight:900;
   line-height:.9;
 }
 
-.core-note-core-steel-mill{
+.core-note-core-rice-mill-new{
   margin-top:6px;               /* small gap under the number */
   font-weight:800;
   letter-spacing:.2px;
@@ -627,51 +627,51 @@ body {
 
 /* Small devices—scale badge a bit */
 @media (max-width: 520px){
-  .core-badge-core-steel-mill{
+  .core-badge-core-rice-mill-new{
     width:110px;
     min-height:160px;
     padding:12px 14px;
   }
-  .core-lead-core-steel-mill2 {
+  .core-lead-core-rice-mill-new2 {
     padding-top: -20px;
     margin-top: -20px;
   }
-  .core-years-core-steel-mill{
+  .core-years-core-rice-mill-new{
     font-size:clamp(1.8rem,8vw,2.4rem);
   }
 }
 
 /* ====== Copy ====== */
-.core-copy-core-steel-mill {
+.core-copy-core-rice-mill-new {
     padding-top: 6px;
 }
 
-.core-kicker-core-steel-mill {
+.core-kicker-core-rice-mill-new {
     margin: 0 0 8px;
     font-weight: 900;
     letter-spacing: .35px;
     color: #ff946b;
 }
 
-.core-title-core-steel-mill {
+.core-title-core-rice-mill-new {
     margin: .1rem 0 .7rem;
     font-size: clamp(1.6rem, 3.4vw, 2.2rem);
     line-height: 1.15;
     font-weight: 900;
 }
 
-.core-lead-core-steel-mill {
+.core-lead-core-rice-mill-new {
     margin: 0 0 1rem;
     color: var(--core-muted);
     line-height: 1.65;
 }
 
 @media (max-width: 480px){
-.core-lead-core-steel-mill2{
+.core-lead-core-rice-mill-new2{
     padding-top: -20px;
     margin-top: -20px;
 }}
-.core-lead-core-steel-mill2 {
+.core-lead-core-rice-mill-new2 {
     max-width: 1200px;
     margin: 20px auto;      
     padding: 20px;
@@ -687,7 +687,7 @@ body {
 }
 
 /* CTA */
-.core-cta-core-steel-mill {
+.core-cta-core-rice-mill-new {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
@@ -702,13 +702,13 @@ body {
     transition: transform .25s ease, filter .25s ease, border-color .25s ease;
 }
 
-.core-cta-core-steel-mill:hover {
+.core-cta-core-rice-mill-new:hover {
     transform: translateY(-2px);
     filter: brightness(1.06);
 }
 
 /* Feature bar */
-.core-bar-core-steel-mill {
+.core-bar-core-rice-mill-new {
     margin-top: clamp(14px, 2.5vw, 20px);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -720,18 +720,18 @@ body {
     border: 1px solid rgba(2, 8, 23, .06);
 }
 
-.core-item-core-steel-mill h3 {
+.core-item-core-rice-mill-new h3 {
     margin: .2rem 0 .35rem;
     font-weight: 900;
     font-size: clamp(1.02rem, 2.2vw, 1.15rem);
 }
 
-.core-item-core-steel-mill p {
+.core-item-core-rice-mill-new p {
     margin: 0;
     color: var(--core-muted);
 }
 
-.core-ico-core-steel-mill {
+.core-ico-core-rice-mill-new {
     width: 38px;
     height: 38px;
     border-radius: 10px;
@@ -743,7 +743,7 @@ body {
     box-shadow: 0 10px 22px rgba(255, 106, 42, .28);
 }
 
-.core-divider-core-steel-mill {
+.core-divider-core-rice-mill-new {
     width: 1px;
     height: 100%;
     background: rgba(2, 8, 23, .1);
@@ -751,54 +751,54 @@ body {
 
 /* ====== Responsive ====== */
 @media (max-width: 960px) {
-    .core-grid-core-steel-mill {
+    .core-grid-core-rice-mill-new {
         grid-template-columns: 1fr;
     }
 
-    .core-media-core-steel-mill {
+    .core-media-core-rice-mill-new {
         order: 1;
     }
 
-    .core-copy-core-steel-mill {
+    .core-copy-core-rice-mill-new {
         order: 2;
     }
 
-    .core-bar-core-steel-mill {
+    .core-bar-core-rice-mill-new {
         grid-template-columns: 1fr;
     }
 
-    .core-divider-core-steel-mill {
+    .core-divider-core-rice-mill-new {
         display: none;
     }
 }
 
 /* ====== Reveal on scroll (replays up/down) ====== */
-.reveal-left-core-steel-mill,
-.reveal-right-core-steel-mill,
-.reveal-up-core-steel-mill,
-.reveal-down-core-steel-mill {
+.reveal-left-core-rice-mill-new,
+.reveal-right-core-rice-mill-new,
+.reveal-up-core-rice-mill-new,
+.reveal-down-core-rice-mill-new {
     opacity: 0;
     transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
     will-change: transform, opacity;
 }
 
-.reveal-left-core-steel-mill {
+.reveal-left-core-rice-mill-new {
     transform: translateX(-18px);
 }
 
-.reveal-right-core-steel-mill {
+.reveal-right-core-rice-mill-new {
     transform: translateX(18px);
 }
 
-.reveal-up-core-steel-mill {
+.reveal-up-core-rice-mill-new {
     transform: translateY(18px);
 }
 
-.reveal-down-core-steel-mill {
+.reveal-down-core-rice-mill-new {
     transform: translateY(-18px);
 }
 
-.is-visible-core-steel-mill {
+.is-visible-core-rice-mill-new {
     opacity: 1;
     transform: none;
 }
@@ -806,19 +806,19 @@ body {
 @media (min-width: 961px) {
 
   /* Let the row height be defined by content, but make columns equal */
-  .core-grid-core-steel-mill {
+  .core-grid-core-rice-mill-new {
       align-items: stretch;   /* both columns stretch to row height */
   }
 
-  .core-media-core-steel-mill,
-  .core-copy-core-steel-mill {
+  .core-media-core-rice-mill-new,
+  .core-copy-core-rice-mill-new {
       height: 100%;
       display: flex;
       flex-direction: column;
   }
 
   /* Image fills the column height and crops nicely */
-  .core-media-core-steel-mill img {
+  .core-media-core-rice-mill-new img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -826,12 +826,12 @@ body {
   }
 
   /* Text column uses full height but does NOT scroll or overflow */
-  .core-copy-core-steel-mill {
+  .core-copy-core-rice-mill-new {
       justify-content: flex-start;
   }
 
   /* Just a small tidy: remove extra space at bottom of last paragraph */
-  .core-copy-core-steel-mill > *:last-child {
+  .core-copy-core-rice-mill-new > *:last-child {
       margin-bottom: 0;
   }
 }
@@ -910,7 +910,7 @@ body {
   right: -48px;          /* matches column-gap */
   width: 48px;
   height: 2px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateY(-50%);
 }
 
@@ -922,7 +922,7 @@ body {
   transform: translate(0, -50%);
   border-style: solid;
   border-width: 6px 0 6px 8px;
-  border-color: transparent transparent transparent var(--accent-steel-mill);
+  border-color: transparent transparent transparent var(--accent-rice-mill-new);
 }
 
 /* Horizontal: right → left (bottom row) */
@@ -933,7 +933,7 @@ body {
   left: -48px;
   width: 48px;
   height: 2px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateY(-50%);
 }
 
@@ -945,7 +945,7 @@ body {
   transform: translate(-0, -50%);
   border-style: solid;
   border-width: 6px 8px 6px 0;
-  border-color: transparent var(--accent-steel-mill) transparent transparent;
+  border-color: transparent var(--accent-rice-mill-new) transparent transparent;
 }
 
 /* Vertical: Husking ↓ Separating */
@@ -956,7 +956,7 @@ body {
   bottom: -50px;          /* matches row-gap */
   width: 2px;
   height: 50px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateX(-50%);
 }
 .step-arrow-down-pre-cleaner-process::before {
@@ -967,7 +967,7 @@ body {
 transform: translate(-50%, 100%);
   border-style: solid;  
   border-width: 8px 8px 0 8px;
-  border-color:var(--accent-steel-mill) transparent transparent transparent;
+  border-color:var(--accent-rice-mill-new) transparent transparent transparent;
 }
 
 .step-from-top-pre-cleaner-process::before {
@@ -978,7 +978,7 @@ transform: translate(-50%, 100%);
   transform: translate(-50%, 0);
   border-style: solid;
   border-width: 8px 6px 0 6px;
-  border-color: var(--accent-steel-mill) transparent transparent transparent;
+  border-color: var(--accent-rice-mill-new) transparent transparent transparent;
 }
 
 /* ---------- Reveal animation helper (optional) ---------- */
@@ -1065,7 +1065,7 @@ transform: translate(-50%, 100%);
     bottom: -18px;
     width: 2px;
     height: 18px;
-    background: var(--accent-steel-mill);
+    background: var(--accent-rice-mill-new);
     transform: translateX(-50%);
   }
 
@@ -1077,7 +1077,7 @@ transform: translate(-50%, 100%);
     transform: translate(-50%, 100%);
     border-style: solid;
     border-width: 8px 6px 0 6px;
-    border-color: var(--accent-steel-mill) transparent transparent transparent;
+    border-color: var(--accent-rice-mill-new) transparent transparent transparent;
   }
 }
 /* ================================
@@ -1152,7 +1152,7 @@ transform: translate(-50%, 100%);
   right: -48px;          /* matches column-gap */
   width: 48px;
   height: 2px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateY(-50%);
 }
 
@@ -1164,7 +1164,7 @@ transform: translate(-50%, 100%);
   transform: translate(0, -50%);
   border-style: solid;
   border-width: 6px 0 6px 8px;
-  border-color: transparent transparent transparent var(--accent-steel-mill);
+  border-color: transparent transparent transparent var(--accent-rice-mill-new);
 }
 
 /* Horizontal: right → left (bottom row) */
@@ -1175,7 +1175,7 @@ transform: translate(-50%, 100%);
   left: -48px;
   width: 48px;
   height: 2px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateY(-50%);
 }
 
@@ -1187,7 +1187,7 @@ transform: translate(-50%, 100%);
   transform: translate(-0, -50%);
   border-style: solid;
   border-width: 6px 8px 6px 0;
-  border-color: transparent var(--accent-steel-mill) transparent transparent;
+  border-color: transparent var(--accent-rice-mill-new) transparent transparent;
 }
 
 /* Vertical: Husking ↓ Separating */
@@ -1198,7 +1198,7 @@ transform: translate(-50%, 100%);
   bottom: -50px;          /* matches row-gap */
   width: 2px;
   height: 50px;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   transform: translateX(-50%);
 }
 
@@ -1210,7 +1210,7 @@ transform: translate(-50%, 100%);
   transform: translate(-50%, 100%);
   border-style: solid;
   border-width: 8px 8px 0 8px;
-  border-color: var(--accent-steel-mill) transparent transparent transparent;
+  border-color: var(--accent-rice-mill-new) transparent transparent transparent;
 }
 
 /* Optional: arrow coming from top (if ever used) */
@@ -1222,7 +1222,7 @@ transform: translate(-50%, 100%);
   transform: translate(-50%, 0);
   border-style: solid;
   border-width: 8px 6px 0 6px;
-  border-color: var(--accent-steel-mill) transparent transparent transparent;
+  border-color: var(--accent-rice-mill-new) transparent transparent transparent;
 }
 
 /* ---------- Tablet adjustments ---------- */
@@ -1301,7 +1301,7 @@ transform: translate(-50%, 100%);
     bottom: -18px;
     width: 2px;
     height: 18px;
-    background: var(--accent-steel-mill);
+    background: var(--accent-rice-mill-new);
     transform: translateX(-50%);
   }
 
@@ -1313,7 +1313,7 @@ transform: translate(-50%, 100%);
     transform: translate(-50%, 100%);
     border-style: solid;
     border-width: 8px 6px 0 6px;
-    border-color: var(--accent-steel-mill) transparent transparent transparent;
+    border-color: var(--accent-rice-mill-new) transparent transparent transparent;
   }
   @media (max-width: 768px) {
 
@@ -1413,7 +1413,7 @@ transform: translate(-50%, 100%);
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: var(--accent-steel-mill);
+  background: var(--accent-rice-mill-new);
   color: #fff;
   font-weight: 800;
   font-size: 0.95rem;
@@ -1543,17 +1543,17 @@ transform: translate(-50%, 100%);
   --proc-shadow:0 10px 30px rgba(2,8,23,.08);
 }
 
-.wrap-process-steel-mill{
+.wrap-process-rice-mill-new{
   background:var(--proc-bg);
   padding: clamp(36px, 6vw, 80px) 16px;
 }
 
-.head-process-steel-mill{
+.head-process-rice-mill-new{
   width:min(1120px, 100%);
   margin: 0 auto clamp(20px, 4vw, 36px);
 }
 
-.title-process-steel-mill{
+.title-process-rice-mill-new{
   font-size: clamp(2.2rem, 8vw, 5.2rem);
   line-height:.95;
   font-weight: 900;
@@ -1562,7 +1562,7 @@ transform: translate(-50%, 100%);
   margin: 0;
 }
 
-.grid-process-steel-mill{
+.grid-process-rice-mill-new{
   width:min(1120px, 100%);
   margin-inline:auto;
   display:grid;
@@ -1570,7 +1570,7 @@ transform: translate(-50%, 100%);
   gap: clamp(14px, 2.4vw, 22px);
 }
 
-.card-process-steel-mill{
+.card-process-rice-mill-new{
   position:relative;
   background:var(--proc-card);
   border:1px solid var(--proc-ring);
@@ -1580,13 +1580,13 @@ transform: translate(-50%, 100%);
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
-.card-process-steel-mill:hover{
+.card-process-rice-mill-new:hover{
   transform: translateY(-4px);
   box-shadow: 0 18px 44px rgba(2,8,23,.12);
   border-color: rgba(249,115,22,.28);
 }
 
-.no-process-steel-mill{
+.no-process-rice-mill-new{
   display:block;
   font-weight:900;
   font-size: clamp(1.8rem, 4.8vw, 2.8rem);
@@ -1594,21 +1594,21 @@ transform: translate(-50%, 100%);
   margin-bottom:.25rem;
 }
 
-.kicker-process-steel-mill{
+.kicker-process-rice-mill-new{
   color: var(--proc-accent);
   font-weight:800;
   font-size:.9rem;
   margin: 0 0 .45rem;
 }
 
-.h3-process-steel-mill{
+.h3-process-rice-mill-new{
   margin:.1rem 0 .4rem;
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   font-weight:900;
   color:var(--proc-ink);
 }
 
-.p-process-steel-mill{
+.p-process-rice-mill-new{
   margin:0;
   color:var(--proc-muted);
   line-height:1.6;
@@ -1617,24 +1617,24 @@ transform: translate(-50%, 100%);
 
 /* ---- Responsive ---- */
 @media (max-width: 980px){
-  .grid-process-steel-mill{
+  .grid-process-rice-mill-new{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 620px){
-  .grid-process-steel-mill{
+  .grid-process-rice-mill-new{
     grid-template-columns: 1fr;
   }
 }
 
 /* ================== Reveal on scroll (bi-directional) ================== */
-.reveal-process-steel-mill{ opacity:0; transform: translateY(16px); }
-.reveal-process-steel-mill.from-up{ transform: translateY(22px); }
-.reveal-process-steel-mill.from-down{ transform: translateY(-22px); }
-.reveal-process-steel-mill.from-left{ transform: translateX(-28px); }
-.reveal-process-steel-mill.from-right{ transform: translateX(28px); }
+.reveal-process-rice-mill-new{ opacity:0; transform: translateY(16px); }
+.reveal-process-rice-mill-new.from-up{ transform: translateY(22px); }
+.reveal-process-rice-mill-new.from-down{ transform: translateY(-22px); }
+.reveal-process-rice-mill-new.from-left{ transform: translateX(-28px); }
+.reveal-process-rice-mill-new.from-right{ transform: translateX(28px); }
 
-.reveal-process-steel-mill.is-visible{
+.reveal-process-rice-mill-new.is-visible{
   opacity:1;
   transform:none;
   transition: transform .6s cubic-bezier(.22,1,.36,1), opacity .6s ease;
