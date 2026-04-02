@@ -1,5 +1,86 @@
 {% load static %}
 
+<style>
+.consult-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.consult-grid textarea,
+.consult-grid .form-captcha,
+.consult-grid .consult-send{
+  grid-column: 1 / -1;
+}
+
+.form-captcha{
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 18px 0 0 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  clear: both;
+  overflow: visible;
+}
+
+.form-captcha .g-recaptcha{
+  display: inline-block ;
+  max-width: 100% ;
+  transform: none ;
+  -webkit-transform: none ;
+  transform-origin: left top ;
+  -webkit-transform-origin: left top;
+}
+
+.consult-send{
+  grid-column: 1 / -1;
+  display: inline-flex;
+  justify-self: start;
+  align-self: start;
+  margin-top: 18px;
+}
+
+.consult-form{
+  overflow: visible;
+}
+
+.consult-grid textarea{
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+  .consult-send{
+    justify-self: start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+  .consult-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .form-captcha{
+    margin-top: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .form-captcha .g-recaptcha{
+    transform: none ;
+    -webkit-transform: none;
+  }
+
+  .consult-send{
+    width: 100%;
+    justify-self: stretch;
+    margin-top: 16px;
+  }
+}
+</style>
+
 
 <section class="consult-block" {% if form_only %}data-form-only="1" {% endif %}>
     <div class="consult-block__inner">
@@ -47,14 +128,19 @@
                     {% endif %}
                 </select>
 
-             
-
                 <textarea name="message" rows="2" placeholder="Your Message (optional)"></textarea>
+
+                            <div class="captcha-submit-row">
+                                <div class="captcha-box">
+                                    <div class="g-recaptcha" data-sitekey="{{ RECAPTCHA_SITE_KEY }}"></div>
+                                </div>
+                            </div>
 
                 <button id="consult-submit" class="consult-send" type="submit">
                     <span class="label">Send Message</span>
                     <span class="spinner" aria-hidden="true"></span>
                 </button>
+
             </form>
         </div>
     </div>
@@ -231,3 +317,4 @@
 })();
 </script>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

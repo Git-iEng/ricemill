@@ -1,4 +1,23 @@
 {% load static %}
+<style> 
+.form-captcha{ 
+  width: 100%; 
+  margin: 15px 0 20px; 
+} 
+ 
+.form-captcha .g-recaptcha{ 
+  background: #fff; 
+  border-radius: 10px; 
+} 
+ 
+@media (max-width: 480px){ 
+  .form-captcha .g-recaptcha{ 
+    transform: scale(0.92); 
+    transform-origin: left top; 
+  } 
+} 
+</style> 
+
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -70,15 +89,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <p class="privacy">
-        Your privacy is important to us. We’ll only use your information to communicate about Solar System.
+        Your privacy is important to us. We’ll only use your information to communicate about Rice Mill.
       </p>
 
       <div class="modal__footer">
-  <button class="btn-submit" id="submitBtn" type="submit" form="demoForm">
-    <span class="btn-label">Submit</span>
-    <span class="spinner" aria-hidden="true"></span>
-  </button>
-</div>
+              <div class="form-captcha">
+                <div class="g-recaptcha" data-sitekey="{{ RECAPTCHA_SITE_KEY }}"></div>
+              </div>
+
+              <button class="btn-submit" id="submitBtn" type="submit" form="demoForm">
+                <span class="btn-label">Submit</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </div>
     </form>
     
 <!-- New footer OUTSIDE the form -->
@@ -86,3 +109,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 <div id="cmmsToastRoot" class="rice-mill-newtoast-wrap" aria-live="polite" aria-atomic="true"></div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
